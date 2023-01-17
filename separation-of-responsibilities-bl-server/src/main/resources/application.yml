@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/homer_security
+    username: postgres
+    password: homer_forever
+    driverClassName: org.postgresql.Driver
+  jpa:
+    show-sql: true
+
+  liquibase:
+    change-log: classpath:changelog/db.changelog-master.xml
+    drop-first: true
