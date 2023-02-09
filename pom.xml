@@ -18,7 +18,9 @@
 	</properties>
 
 	<modules>
-		<module>smallSecuredWebApplication</module>
-	</modules>
+        <module>smallSecuredWebApplication</module>
+        <module>separation-of-responsibilities-auth-server</module>
+        <module>separation-of-responsibilities-bl-server</module>
+    </modules>
 
 </project>

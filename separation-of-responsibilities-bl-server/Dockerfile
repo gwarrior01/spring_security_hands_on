@@ -1,4 +1,0 @@
-FROM postgres:alpine
-ENV POSTGRES_PASSWORD homer_forever
-ENV POSTGRES_DB homer_security
-EXPOSE 5432

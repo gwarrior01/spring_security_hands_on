@@ -10,3 +10,5 @@ spring:
   liquibase:
     change-log: classpath:changelog/db.changelog-master.xml
     drop-first: true
+server:
+  port: 8090

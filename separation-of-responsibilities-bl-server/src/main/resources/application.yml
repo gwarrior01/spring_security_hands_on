@@ -1,12 +1,16 @@
-spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/homer_security
-    username: postgres
-    password: homer_forever
-    driverClassName: org.postgresql.Driver
-  jpa:
-    show-sql: true
-
-  liquibase:
-    change-log: classpath:changelog/db.changelog-master.xml
-    drop-first: true
+jwt:
+  signing:
+    key: MIICeAIBADANBgkqhkiG9w0BAQEFAASCAmIwggJeAgEAAoGBAM6oYBdu+3mUcmXNUayEaKSgSZZ5oy2xhC9Mz/0IV0sGmE/56I0Yw9XvPSWwE60VB2dScULaCDK7wSNqqMgEFPT7W4AxXC/9p3/FkxM+B2ljBFb/7HSgKW4J+u01KWUrsp8lF5fHrJBulkG/Gi09fzRgqF0G64SdfE97C1OaM9LZAgMBAAECgYEAlscylOZchHBSpwQOuxhAYRyxlCBbdlM2Zmxcs/kJ96twJanoikmvWL+clYrKUFYveKsmB+icYqeqWvTPAGA6CNRRHPHT7W6tA2M2sj1lsR89elF76uweKfm+Jzp2FwuDnUp+kP5lWp+weNN3Cl4cqhwliPu8hwYPkgVMOAxI1KECQQDpKpppJDhovyMmu4pEFgQRyvK7eySgOWNGu+BSmp8vZT9p3SZNYdJFJFdj
+auth:
+  server:
+    base:
+      url: http://localhost:8090
+server:
+  port: 8888
+logging:
+  level:
+    org:
+      springframework:
+        web:
+          client:
+            RestTemplate: DEBUG
